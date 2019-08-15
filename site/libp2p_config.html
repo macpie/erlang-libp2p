@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300italic,600italic,700,600,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="screen.css" media="screen, projection" />
+    <title>Erlang Libp2p Library</title>
+  </head>
+  <body>
+    <header>
+        <h1>Erlang Libp2p</h1>
+        <nav>
+          <ul>
+<li><a href="index.html">index</a><li><a href="libp2p_ack_stream.html">libp2p_ack_stream</a><li><a href="libp2p_cache.html">libp2p_cache</a><li><a href="libp2p_config.html">libp2p_config</a><li><a href="libp2p_connection.html">libp2p_connection</a><li><a href="libp2p_crypto.html">libp2p_crypto</a><li><a href="libp2p_framed_stream.html">libp2p_framed_stream</a><li><a href="libp2p_gossip_stream.html">libp2p_gossip_stream</a><li><a href="libp2p_group_gossip.html">libp2p_group_gossip</a><li><a href="libp2p_group_gossip_handler.html">libp2p_group_gossip_handler</a><li><a href="libp2p_group_gossip_server.html">libp2p_group_gossip_server</a><li><a href="libp2p_group_gossip_sup.html">libp2p_group_gossip_sup</a><li><a href="libp2p_group_relcast.html">libp2p_group_relcast</a><li><a href="libp2p_group_relcast_server.html">libp2p_group_relcast_server</a><li><a href="libp2p_group_relcast_sup.html">libp2p_group_relcast_sup</a><li><a href="libp2p_group_server.html">libp2p_group_server</a><li><a href="libp2p_group_worker.html">libp2p_group_worker</a><li><a href="libp2p_group_worker_sup.html">libp2p_group_worker_sup</a><li><a href="libp2p_identify.html">libp2p_identify</a><li><a href="libp2p_info.html">libp2p_info</a><li><a href="libp2p_lager_metadata.html">libp2p_lager_metadata</a><li><a href="libp2p_multistream.html">libp2p_multistream</a><li><a href="libp2p_multistream_client.html">libp2p_multistream_client</a><li><a href="libp2p_multistream_server.html">libp2p_multistream_server</a><li><a href="libp2p_nat.html">libp2p_nat</a><li><a href="libp2p_nat_server.html">libp2p_nat_server</a><li><a href="libp2p_peer.html">libp2p_peer</a><li><a href="libp2p_peerbook.html">libp2p_peerbook</a><li><a href="libp2p_proxy.html">libp2p_proxy</a><li><a href="libp2p_proxy_dial_back.html">libp2p_proxy_dial_back</a><li><a href="libp2p_proxy_envelope.html">libp2p_proxy_envelope</a><li><a href="libp2p_proxy_error.html">libp2p_proxy_error</a><li><a href="libp2p_proxy_overload.html">libp2p_proxy_overload</a><li><a href="libp2p_proxy_req.html">libp2p_proxy_req</a><li><a href="libp2p_proxy_resp.html">libp2p_proxy_resp</a><li><a href="libp2p_proxy_server.html">libp2p_proxy_server</a><li><a href="libp2p_proxy_session.html">libp2p_proxy_session</a><li><a href="libp2p_relay.html">libp2p_relay</a><li><a href="libp2p_relay_bridge.html">libp2p_relay_bridge</a><li><a href="libp2p_relay_envelope.html">libp2p_relay_envelope</a><li><a href="libp2p_relay_ping.html">libp2p_relay_ping</a><li><a href="libp2p_relay_req.html">libp2p_relay_req</a><li><a href="libp2p_relay_resp.html">libp2p_relay_resp</a><li><a href="libp2p_relay_server.html">libp2p_relay_server</a><li><a href="libp2p_session.html">libp2p_session</a><li><a href="libp2p_simple_sup.html">libp2p_simple_sup</a><li><a href="libp2p_stream_identify.html">libp2p_stream_identify</a><li><a href="libp2p_stream_proxy.html">libp2p_stream_proxy</a><li><a href="libp2p_stream_relay.html">libp2p_stream_relay</a><li><a href="libp2p_stream_stungun.html">libp2p_stream_stungun</a><li><a href="libp2p_swarm.html">libp2p_swarm</a><li><a href="libp2p_swarm_auxiliary_sup.html">libp2p_swarm_auxiliary_sup</a><li><a href="libp2p_swarm_group_sup.html">libp2p_swarm_group_sup</a><li><a href="libp2p_swarm_listener_sup.html">libp2p_swarm_listener_sup</a><li><a href="libp2p_swarm_server.html">libp2p_swarm_server</a><li><a href="libp2p_swarm_session_sup.html">libp2p_swarm_session_sup</a><li><a href="libp2p_swarm_sup.html">libp2p_swarm_sup</a><li><a href="libp2p_swarm_transport_sup.html">libp2p_swarm_transport_sup</a><li><a href="libp2p_transport.html">libp2p_transport</a><li><a href="libp2p_transport_p2p.html">libp2p_transport_p2p</a><li><a href="libp2p_transport_proxy.html">libp2p_transport_proxy</a><li><a href="libp2p_transport_ranch_protocol.html">libp2p_transport_ranch_protocol</a><li><a href="libp2p_transport_relay.html">libp2p_transport_relay</a><li><a href="libp2p_transport_tcp.html">libp2p_transport_tcp</a><li><a href="libp2p_yamux_session.html">libp2p_yamux_session</a><li><a href="libp2p_yamux_stream.html">libp2p_yamux_stream</a>
+          </ul>
+        </nav>
+    </header>
+    <article>
+    <h2>Module libp2p_config</h2>
+<ul class="index"><li><a href="#types">Data Types</a></li><li><a href="#index">Function Index</a></li><li><a href="#functions">Function Details</a></li></ul>
+
+
+<h3><a name="types">Data Types</a></h3>
+
+<h4 class="typedecl"><a name="type-handler">handler()</a></h4>
+<p><code>handler() = {atom(), atom()}</code></p>
+
+
+<h4 class="typedecl"><a name="type-opts">opts()</a></h4>
+<p><code>opts() = [{atom(), any()}]</code></p>
+
+
+<h3><a name="index">Function Index</a></h3>
+<table width="100%" border="1" cellspacing="0" cellpadding="2" summary="function index"><tr><td valign="top"><a href="#base_dir-1">base_dir/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#get_opt-2">get_opt/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#get_opt-3">get_opt/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_connection_handler-2">insert_connection_handler/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_group-3">insert_group/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_listen_socket-4">insert_listen_socket/4</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_listener-3">insert_listener/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_nat-2">insert_nat/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_pid-4">insert_pid/4</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_proxy-2">insert_proxy/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_relay-2">insert_relay/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_relay_sessions-3">insert_relay_sessions/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_relay_stream-3">insert_relay_stream/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_session-3">insert_session/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_session_addr_info-3">insert_session_addr_info/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_stream_handler-2">insert_stream_handler/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#insert_transport-3">insert_transport/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#listen_addrs-1">listen_addrs/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#listen_socket-0">listen_socket/0</a></td><td></td></tr>
+<tr><td valign="top"><a href="#listen_sockets-1">listen_sockets/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#listener-0">listener/0</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_connection_handlers-1">lookup_connection_handlers/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_group-2">lookup_group/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_listen_socket-2">lookup_listen_socket/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_listen_socket_by_addr-2">lookup_listen_socket_by_addr/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_listener-2">lookup_listener/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_nat-1">lookup_nat/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_pid-3">lookup_pid/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_pids-2">lookup_pids/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_proxy-1">lookup_proxy/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_relay-1">lookup_relay/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_relay_sessions-2">lookup_relay_sessions/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_relay_stream-2">lookup_relay_stream/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_session-2">lookup_session/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_session-3">lookup_session/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_session_addr_info-2">lookup_session_addr_info/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_session_addrs-1">lookup_session_addrs/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_session_addrs-2">lookup_session_addrs/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_sessions-1">lookup_sessions/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_stream_handlers-1">lookup_stream_handlers/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_transport-2">lookup_transport/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#lookup_transports-1">lookup_transports/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_group-2">remove_group/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_listen_socket-2">remove_listen_socket/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_listener-2">remove_listener/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_nat-1">remove_nat/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_pid-2">remove_pid/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_pid-3">remove_pid/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_proxy-1">remove_proxy/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_relay-1">remove_relay/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_relay_sessions-2">remove_relay_sessions/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_relay_stream-2">remove_relay_stream/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_session-2">remove_session/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#remove_stream_handler-2">remove_stream_handler/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#session-0">session/0</a></td><td></td></tr>
+<tr><td valign="top"><a href="#swarm_dir-2">swarm_dir/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#transport-0">transport/0</a></td><td></td></tr>
+</table>
+
+<h3><a name="functions">Function Details</a></h3>
+
+<h4 class="function"><a name="base_dir-1">base_dir/1</a></h4>
+<div class="spec">
+<p><code>base_dir(TID) -&gt; any()</code></p>
+</div>
+
+<h4 class="function"><a name="get_opt-2">get_opt/2</a></h4>
+<div class="spec">
+<p><code>get_opt(Opts::<a href="#type-opts">opts()</a>, L::atom() | list()) -&gt; undefined | {ok, any()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="get_opt-3">get_opt/3</a></h4>
+<div class="spec">
+<p><code>get_opt(Opts::<a href="#type-opts">opts()</a>, K::atom() | list(), Default::any()) -&gt; any()</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_connection_handler-2">insert_connection_handler/2</a></h4>
+<div class="spec">
+<p><code>insert_connection_handler(TID::<a href="ets.html#type-tab">ets:tab()</a>, X2::{string(), <a href="#type-handler">handler()</a>, <a href="#type-handler">handler()</a> | undefined}) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_group-3">insert_group/3</a></h4>
+<div class="spec">
+<p><code>insert_group(TID::<a href="ets.html#type-tab">ets:tab()</a>, GroupID::string(), Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_listen_socket-4">insert_listen_socket/4</a></h4>
+<div class="spec">
+<p><code>insert_listen_socket(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid(), ListenAddr::string(), Socket::<a href="gen_tcp.html#type-socket">gen_tcp:socket()</a>) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_listener-3">insert_listener/3</a></h4>
+<div class="spec">
+<p><code>insert_listener(TID::<a href="ets.html#type-tab">ets:tab()</a>, Addrs::[string()], Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_nat-2">insert_nat/2</a></h4>
+<div class="spec">
+<p><code>insert_nat(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_pid-4">insert_pid/4</a></h4>
+<div class="spec">
+<p><code>insert_pid(TID::<a href="ets.html#type-tab">ets:tab()</a>, Kind::atom(), Ref::term(), Pid::pid() | undefined) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_proxy-2">insert_proxy/2</a></h4>
+<div class="spec">
+<p><code>insert_proxy(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_relay-2">insert_relay/2</a></h4>
+<div class="spec">
+<p><code>insert_relay(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_relay_sessions-3">insert_relay_sessions/3</a></h4>
+<div class="spec">
+<p><code>insert_relay_sessions(TID::<a href="ets.html#type-tab">ets:tab()</a>, Address::string(), Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_relay_stream-3">insert_relay_stream/3</a></h4>
+<div class="spec">
+<p><code>insert_relay_stream(TID::<a href="ets.html#type-tab">ets:tab()</a>, Address::string(), Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_session-3">insert_session/3</a></h4>
+<div class="spec">
+<p><code>insert_session(TID::<a href="ets.html#type-tab">ets:tab()</a>, Addr::string(), Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_session_addr_info-3">insert_session_addr_info/3</a></h4>
+<div class="spec">
+<p><code>insert_session_addr_info(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid(), AddrInfo::{string(), string()}) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_stream_handler-2">insert_stream_handler/2</a></h4>
+<div class="spec">
+<p><code>insert_stream_handler(TID::<a href="ets.html#type-tab">ets:tab()</a>, X2::{string(), <a href="libp2p_session.html#type-stream_handler">libp2p_session:stream_handler()</a>}) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="insert_transport-3">insert_transport/3</a></h4>
+<div class="spec">
+<p><code>insert_transport(TID::<a href="ets.html#type-tab">ets:tab()</a>, Module::atom(), Pid::pid() | undefined) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="listen_addrs-1">listen_addrs/1</a></h4>
+<div class="spec">
+<p><code>listen_addrs(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; [string()]</code><br></p>
+</div>
+
+<h4 class="function"><a name="listen_socket-0">listen_socket/0</a></h4>
+<div class="spec">
+<p><code>listen_socket() -&gt; '?LISTEN_SOCKET'</code><br></p>
+</div>
+
+<h4 class="function"><a name="listen_sockets-1">listen_sockets/1</a></h4>
+<div class="spec">
+<p><code>listen_sockets(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; [{pid(), string(), <a href="gen_tcp.html#type-socket">gen_tcp:socket()</a>}]</code><br></p>
+</div>
+
+<h4 class="function"><a name="listener-0">listener/0</a></h4>
+<div class="spec">
+<p><code>listener() -&gt; '?LISTENER'</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_connection_handlers-1">lookup_connection_handlers/1</a></h4>
+<div class="spec">
+<p><code>lookup_connection_handlers(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; [{string(), {<a href="#type-handler">handler()</a>, <a href="#type-handler">handler()</a> | undefined}}]</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_group-2">lookup_group/2</a></h4>
+<div class="spec">
+<p><code>lookup_group(TID::<a href="ets.html#type-tab">ets:tab()</a>, GroupID::string()) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_listen_socket-2">lookup_listen_socket/2</a></h4>
+<div class="spec">
+<p><code>lookup_listen_socket(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid()) -&gt; {ok, {string(), <a href="gen_tcp.html#type-socket">gen_tcp:socket()</a>}} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_listen_socket_by_addr-2">lookup_listen_socket_by_addr/2</a></h4>
+<div class="spec">
+<p><code>lookup_listen_socket_by_addr(TID::<a href="ets.html#type-tab">ets:tab()</a>, Addr::string()) -&gt; {ok, {pid(), <a href="gen_tcp.html#type-socket">gen_tcp:socket()</a>}} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_listener-2">lookup_listener/2</a></h4>
+<div class="spec">
+<p><code>lookup_listener(TID::<a href="ets.html#type-tab">ets:tab()</a>, Addr::string()) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_nat-1">lookup_nat/1</a></h4>
+<div class="spec">
+<p><code>lookup_nat(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_pid-3">lookup_pid/3</a></h4>
+<div class="spec">
+<p><code>lookup_pid(TID::<a href="ets.html#type-tab">ets:tab()</a>, Kind::atom(), Ref::term()) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_pids-2">lookup_pids/2</a></h4>
+<div class="spec">
+<p><code>lookup_pids(TID::<a href="ets.html#type-tab">ets:tab()</a>, Kind::atom()) -&gt; [{term(), pid()}]</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_proxy-1">lookup_proxy/1</a></h4>
+<div class="spec">
+<p><code>lookup_proxy(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_relay-1">lookup_relay/1</a></h4>
+<div class="spec">
+<p><code>lookup_relay(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_relay_sessions-2">lookup_relay_sessions/2</a></h4>
+<div class="spec">
+<p><code>lookup_relay_sessions(TID::<a href="ets.html#type-tab">ets:tab()</a>, Address::string()) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_relay_stream-2">lookup_relay_stream/2</a></h4>
+<div class="spec">
+<p><code>lookup_relay_stream(TID::<a href="ets.html#type-tab">ets:tab()</a>, Address::string()) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_session-2">lookup_session/2</a></h4>
+<div class="spec">
+<p><code>lookup_session(TID::<a href="ets.html#type-tab">ets:tab()</a>, Addr::string()) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_session-3">lookup_session/3</a></h4>
+<div class="spec">
+<p><code>lookup_session(TID::<a href="ets.html#type-tab">ets:tab()</a>, Addr::string(), Options::<a href="#type-opts">opts()</a>) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_session_addr_info-2">lookup_session_addr_info/2</a></h4>
+<div class="spec">
+<p><code>lookup_session_addr_info(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid()) -&gt; {ok, {string(), string()}} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_session_addrs-1">lookup_session_addrs/1</a></h4>
+<div class="spec">
+<p><code>lookup_session_addrs(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; [string()]</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_session_addrs-2">lookup_session_addrs/2</a></h4>
+<div class="spec">
+<p><code>lookup_session_addrs(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid()) -&gt; [string()]</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_sessions-1">lookup_sessions/1</a></h4>
+<div class="spec">
+<p><code>lookup_sessions(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; [{term(), pid()}]</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_stream_handlers-1">lookup_stream_handlers/1</a></h4>
+<div class="spec">
+<p><code>lookup_stream_handlers(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; [{string(), <a href="libp2p_session.html#type-stream_handler">libp2p_session:stream_handler()</a>}]</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_transport-2">lookup_transport/2</a></h4>
+<div class="spec">
+<p><code>lookup_transport(TID::<a href="ets.html#type-tab">ets:tab()</a>, Module::atom()) -&gt; {ok, pid()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="lookup_transports-1">lookup_transports/1</a></h4>
+<div class="spec">
+<p><code>lookup_transports(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; [{term(), pid()}]</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_group-2">remove_group/2</a></h4>
+<div class="spec">
+<p><code>remove_group(TID::<a href="ets.html#type-tab">ets:tab()</a>, GroupID::string()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_listen_socket-2">remove_listen_socket/2</a></h4>
+<div class="spec">
+<p><code>remove_listen_socket(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_listener-2">remove_listener/2</a></h4>
+<div class="spec">
+<p><code>remove_listener(TID::<a href="ets.html#type-tab">ets:tab()</a>, Addr::string()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_nat-1">remove_nat/1</a></h4>
+<div class="spec">
+<p><code>remove_nat(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_pid-2">remove_pid/2</a></h4>
+<div class="spec">
+<p><code>remove_pid(TID::<a href="ets.html#type-tab">ets:tab()</a>, Pid::pid()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_pid-3">remove_pid/3</a></h4>
+<div class="spec">
+<p><code>remove_pid(TID::<a href="ets.html#type-tab">ets:tab()</a>, Kind::atom(), Ref::term()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_proxy-1">remove_proxy/1</a></h4>
+<div class="spec">
+<p><code>remove_proxy(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_relay-1">remove_relay/1</a></h4>
+<div class="spec">
+<p><code>remove_relay(TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_relay_sessions-2">remove_relay_sessions/2</a></h4>
+<div class="spec">
+<p><code>remove_relay_sessions(TID::<a href="ets.html#type-tab">ets:tab()</a>, Address::string()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_relay_stream-2">remove_relay_stream/2</a></h4>
+<div class="spec">
+<p><code>remove_relay_stream(TID::<a href="ets.html#type-tab">ets:tab()</a>, Address::string()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_session-2">remove_session/2</a></h4>
+<div class="spec">
+<p><code>remove_session(TID::<a href="ets.html#type-tab">ets:tab()</a>, Addr::string()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="remove_stream_handler-2">remove_stream_handler/2</a></h4>
+<div class="spec">
+<p><code>remove_stream_handler(TID::<a href="ets.html#type-tab">ets:tab()</a>, Key::string()) -&gt; true</code><br></p>
+</div>
+
+<h4 class="function"><a name="session-0">session/0</a></h4>
+<div class="spec">
+<p><code>session() -&gt; '?SESSION'</code><br></p>
+</div>
+
+<h4 class="function"><a name="swarm_dir-2">swarm_dir/2</a></h4>
+<div class="spec">
+<p><code>swarm_dir(TID::<a href="ets.html#type-tab">ets:tab()</a>, Names::[<a href="file.html#type-name_all">file:name_all()</a>]) -&gt; <a href="file.html#type-filename_all">file:filename_all()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="transport-0">transport/0</a></h4>
+<div class="spec">
+<p><code>transport() -&gt; '?TRANSPORT'</code><br></p>
+</div>
+
+    </article>
+  </body>
+</html>

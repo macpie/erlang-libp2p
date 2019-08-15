@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300italic,600italic,700,600,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="screen.css" media="screen, projection" />
+    <title>Erlang Libp2p Library</title>
+  </head>
+  <body>
+    <header>
+        <h1>Erlang Libp2p</h1>
+        <nav>
+          <ul>
+<li><a href="index.html">index</a><li><a href="libp2p_ack_stream.html">libp2p_ack_stream</a><li><a href="libp2p_cache.html">libp2p_cache</a><li><a href="libp2p_config.html">libp2p_config</a><li><a href="libp2p_connection.html">libp2p_connection</a><li><a href="libp2p_crypto.html">libp2p_crypto</a><li><a href="libp2p_framed_stream.html">libp2p_framed_stream</a><li><a href="libp2p_gossip_stream.html">libp2p_gossip_stream</a><li><a href="libp2p_group_gossip.html">libp2p_group_gossip</a><li><a href="libp2p_group_gossip_handler.html">libp2p_group_gossip_handler</a><li><a href="libp2p_group_gossip_server.html">libp2p_group_gossip_server</a><li><a href="libp2p_group_gossip_sup.html">libp2p_group_gossip_sup</a><li><a href="libp2p_group_relcast.html">libp2p_group_relcast</a><li><a href="libp2p_group_relcast_server.html">libp2p_group_relcast_server</a><li><a href="libp2p_group_relcast_sup.html">libp2p_group_relcast_sup</a><li><a href="libp2p_group_server.html">libp2p_group_server</a><li><a href="libp2p_group_worker.html">libp2p_group_worker</a><li><a href="libp2p_group_worker_sup.html">libp2p_group_worker_sup</a><li><a href="libp2p_identify.html">libp2p_identify</a><li><a href="libp2p_info.html">libp2p_info</a><li><a href="libp2p_lager_metadata.html">libp2p_lager_metadata</a><li><a href="libp2p_multistream.html">libp2p_multistream</a><li><a href="libp2p_multistream_client.html">libp2p_multistream_client</a><li><a href="libp2p_multistream_server.html">libp2p_multistream_server</a><li><a href="libp2p_nat.html">libp2p_nat</a><li><a href="libp2p_nat_server.html">libp2p_nat_server</a><li><a href="libp2p_peer.html">libp2p_peer</a><li><a href="libp2p_peerbook.html">libp2p_peerbook</a><li><a href="libp2p_proxy.html">libp2p_proxy</a><li><a href="libp2p_proxy_dial_back.html">libp2p_proxy_dial_back</a><li><a href="libp2p_proxy_envelope.html">libp2p_proxy_envelope</a><li><a href="libp2p_proxy_error.html">libp2p_proxy_error</a><li><a href="libp2p_proxy_overload.html">libp2p_proxy_overload</a><li><a href="libp2p_proxy_req.html">libp2p_proxy_req</a><li><a href="libp2p_proxy_resp.html">libp2p_proxy_resp</a><li><a href="libp2p_proxy_server.html">libp2p_proxy_server</a><li><a href="libp2p_proxy_session.html">libp2p_proxy_session</a><li><a href="libp2p_relay.html">libp2p_relay</a><li><a href="libp2p_relay_bridge.html">libp2p_relay_bridge</a><li><a href="libp2p_relay_envelope.html">libp2p_relay_envelope</a><li><a href="libp2p_relay_ping.html">libp2p_relay_ping</a><li><a href="libp2p_relay_req.html">libp2p_relay_req</a><li><a href="libp2p_relay_resp.html">libp2p_relay_resp</a><li><a href="libp2p_relay_server.html">libp2p_relay_server</a><li><a href="libp2p_session.html">libp2p_session</a><li><a href="libp2p_simple_sup.html">libp2p_simple_sup</a><li><a href="libp2p_stream_identify.html">libp2p_stream_identify</a><li><a href="libp2p_stream_proxy.html">libp2p_stream_proxy</a><li><a href="libp2p_stream_relay.html">libp2p_stream_relay</a><li><a href="libp2p_stream_stungun.html">libp2p_stream_stungun</a><li><a href="libp2p_swarm.html">libp2p_swarm</a><li><a href="libp2p_swarm_auxiliary_sup.html">libp2p_swarm_auxiliary_sup</a><li><a href="libp2p_swarm_group_sup.html">libp2p_swarm_group_sup</a><li><a href="libp2p_swarm_listener_sup.html">libp2p_swarm_listener_sup</a><li><a href="libp2p_swarm_server.html">libp2p_swarm_server</a><li><a href="libp2p_swarm_session_sup.html">libp2p_swarm_session_sup</a><li><a href="libp2p_swarm_sup.html">libp2p_swarm_sup</a><li><a href="libp2p_swarm_transport_sup.html">libp2p_swarm_transport_sup</a><li><a href="libp2p_transport.html">libp2p_transport</a><li><a href="libp2p_transport_p2p.html">libp2p_transport_p2p</a><li><a href="libp2p_transport_proxy.html">libp2p_transport_proxy</a><li><a href="libp2p_transport_ranch_protocol.html">libp2p_transport_ranch_protocol</a><li><a href="libp2p_transport_relay.html">libp2p_transport_relay</a><li><a href="libp2p_transport_tcp.html">libp2p_transport_tcp</a><li><a href="libp2p_yamux_session.html">libp2p_yamux_session</a><li><a href="libp2p_yamux_stream.html">libp2p_yamux_stream</a>
+          </ul>
+        </nav>
+    </header>
+    <article>
+    <h2>Module libp2p_transport_tcp</h2>
+<ul class="index"><li><a href="#types">Data Types</a></li><li><a href="#index">Function Index</a></li><li><a href="#functions">Function Details</a></li></ul>
+
+<p><strong>Behaviours:</strong> <a href="libp2p_connection.html"><code>libp2p_connection</code></a>.</p>
+
+<h3><a name="types">Data Types</a></h3>
+
+<h4 class="typedecl"><a name="type-listen_opt">listen_opt()</a></h4>
+<p><code>listen_opt() = {backlog, non_neg_integer()} | {buffer, non_neg_integer()} | {delay_send, boolean()} | {dontroute, boolean()} | {exit_on_close, boolean()} | {fd, non_neg_integer()} | {high_msgq_watermark, non_neg_integer()} | {high_watermark, non_neg_integer()} | {keepalive, boolean()} | {linger, {boolean(), non_neg_integer()}} | {low_msgq_watermark, non_neg_integer()} | {low_watermark, non_neg_integer()} | {nodelay, boolean()} | {port, <a href="inet.html#type-port_number">inet:port_number()</a>} | {priority, integer()} | {raw, non_neg_integer(), non_neg_integer(), binary()} | {recbuf, non_neg_integer()} | {send_timeout, timeout()} | {send_timeout_close, boolean()} | {sndbuf, non_neg_integer()} | {tos, integer()}</code></p>
+
+
+<h4 class="typedecl"><a name="type-opt">opt()</a></h4>
+<p><code>opt() = {listen, [<a href="#type-listen_opt">listen_opt()</a>]}</code></p>
+
+
+<h4 class="typedecl"><a name="type-tcp_state">tcp_state()</a></h4>
+<p><code>tcp_state() = #tcp_state{addr_info = {string(), string()}, socket = <a href="gen_tcp.html#type-socket">gen_tcp:socket()</a>, session = pid() | undefined, transport = atom()}</code></p>
+
+
+<h3><a name="index">Function Index</a></h3>
+<table width="100%" border="1" cellspacing="0" cellpadding="2" summary="function index"><tr><td valign="top"><a href="#acknowledge-2">acknowledge/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#addr_info-1">addr_info/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#close-1">close/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#close_state-1">close_state/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#common_options-0">common_options/0</a></td><td></td></tr>
+<tr><td valign="top"><a href="#connect-5">connect/5</a></td><td></td></tr>
+<tr><td valign="top"><a href="#controlling_process-2">controlling_process/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#fdclr-1">fdclr/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#fdset-1">fdset/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#handle_call-3">handle_call/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#handle_cast-2">handle_cast/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#handle_info-2">handle_info/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#init-1">init/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#is_public-1">is_public/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#match_addr-1">match_addr/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#match_addr-2">match_addr/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#new_connection-1">new_connection/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#new_connection-2">new_connection/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#recv-3">recv/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#rfc1918-1">rfc1918/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#send-3">send/3</a></td><td></td></tr>
+<tr><td valign="top"><a href="#session-1">session/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#set_idle_timeout-2">set_idle_timeout/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#socket-1">socket/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#sort_addrs-1">sort_addrs/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#start_link-1">start_link/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#start_listener-2">start_listener/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#tcp_addr-1">tcp_addr/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#terminate-2">terminate/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#to_multiaddr-1">to_multiaddr/1</a></td><td></td></tr>
+</table>
+
+<h3><a name="functions">Function Details</a></h3>
+
+<h4 class="function"><a name="acknowledge-2">acknowledge/2</a></h4>
+<div class="spec">
+<p><code>acknowledge(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>, Ref::reference()) -&gt; ok</code><br></p>
+</div>
+
+<h4 class="function"><a name="addr_info-1">addr_info/1</a></h4>
+<div class="spec">
+<p><code>addr_info(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>) -&gt; {string(), string()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="close-1">close/1</a></h4>
+<div class="spec">
+<p><code>close(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>) -&gt; ok</code><br></p>
+</div>
+
+<h4 class="function"><a name="close_state-1">close_state/1</a></h4>
+<div class="spec">
+<p><code>close_state(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>) -&gt; open | closed</code><br></p>
+</div>
+
+<h4 class="function"><a name="common_options-0">common_options/0</a></h4>
+<div class="spec">
+<p><code>common_options() -&gt; [term()]</code><br></p>
+</div>
+
+<h4 class="function"><a name="connect-5">connect/5</a></h4>
+<div class="spec">
+<p><code>connect(Pid::pid(), MAddr::string(), Options::<a href="libp2p_swarm.html#type-connect_opts">libp2p_swarm:connect_opts()</a>, Timeout::pos_integer(), TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; {ok, pid()} | {error, term()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="controlling_process-2">controlling_process/2</a></h4>
+<div class="spec">
+<p><code>controlling_process(State::<a href="#type-tcp_state">tcp_state()</a>, Pid::pid()) -&gt; {ok, <a href="#type-tcp_state">tcp_state()</a>} | {error, closed | not_owner | atom()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="fdclr-1">fdclr/1</a></h4>
+<div class="spec">
+<p><code>fdclr(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>) -&gt; ok</code><br></p>
+</div>
+
+<h4 class="function"><a name="fdset-1">fdset/1</a></h4>
+<div class="spec">
+<p><code>fdset(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>) -&gt; ok | {error, term()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="handle_call-3">handle_call/3</a></h4>
+<div class="spec">
+<p><code>handle_call(Msg, From, State) -&gt; any()</code></p>
+</div>
+
+<h4 class="function"><a name="handle_cast-2">handle_cast/2</a></h4>
+<div class="spec">
+<p><code>handle_cast(Msg, State) -&gt; any()</code></p>
+</div>
+
+<h4 class="function"><a name="handle_info-2">handle_info/2</a></h4>
+<div class="spec">
+<p><code>handle_info(Msg, State) -&gt; any()</code></p>
+</div>
+
+<h4 class="function"><a name="init-1">init/1</a></h4>
+<div class="spec">
+<p><code>init(X1) -&gt; any()</code></p>
+</div>
+
+<h4 class="function"><a name="is_public-1">is_public/1</a></h4>
+<div class="spec">
+<p><code>is_public(Address::string()) -&gt; boolean()</code><br></p>
+</div>
+
+<h4 class="function"><a name="match_addr-1">match_addr/1</a></h4>
+<div class="spec">
+<p><code>match_addr(Addr::string()) -&gt; {ok, string()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="match_addr-2">match_addr/2</a></h4>
+<div class="spec">
+<p><code>match_addr(Addr::string(), TID::<a href="ets.html#type-tab">ets:tab()</a>) -&gt; {ok, string()} | false</code><br></p>
+</div>
+
+<h4 class="function"><a name="new_connection-1">new_connection/1</a></h4>
+<div class="spec">
+<p><code>new_connection(Socket::<a href="inet.html#type-socket">inet:socket()</a>) -&gt; <a href="libp2p_connection.html#type-connection">libp2p_connection:connection()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="new_connection-2">new_connection/2</a></h4>
+<div class="spec">
+<p><code>new_connection(Socket::<a href="inet.html#type-socket">inet:socket()</a>, PeerName::string()) -&gt; <a href="libp2p_connection.html#type-connection">libp2p_connection:connection()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="recv-3">recv/3</a></h4>
+<div class="spec">
+<p><code>recv(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>, Length::non_neg_integer(), Timeout::pos_integer()) -&gt; {ok, binary()} | {error, term()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="rfc1918-1">rfc1918/1</a></h4>
+<div class="spec">
+<p><code>rfc1918(IP) -&gt; any()</code></p>
+</div>
+
+<h4 class="function"><a name="send-3">send/3</a></h4>
+<div class="spec">
+<p><code>send(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>, Data::iodata(), Timeout::non_neg_integer()) -&gt; ok | {error, term()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="session-1">session/1</a></h4>
+<div class="spec">
+<p><code>session(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>) -&gt; {ok, pid()} | {error, term()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="set_idle_timeout-2">set_idle_timeout/2</a></h4>
+<div class="spec">
+<p><code>set_idle_timeout(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>, Timeout::pos_integer() | infinity) -&gt; ok | {error, term()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="socket-1">socket/1</a></h4>
+<div class="spec">
+<p><code>socket(Tcp_state::<a href="#type-tcp_state">tcp_state()</a>) -&gt; <a href="gen_tcp.html#type-socket">gen_tcp:socket()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="sort_addrs-1">sort_addrs/1</a></h4>
+<div class="spec">
+<p><code>sort_addrs(Addrs::[string()]) -&gt; [{integer(), string()}]</code><br></p>
+</div>
+
+<h4 class="function"><a name="start_link-1">start_link/1</a></h4>
+<div class="spec">
+<p><code>start_link(TID) -&gt; any()</code></p>
+</div>
+
+<h4 class="function"><a name="start_listener-2">start_listener/2</a></h4>
+<div class="spec">
+<p><code>start_listener(Pid::pid(), Addr::string()) -&gt; {ok, [string()], pid()} | {error, term()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="tcp_addr-1">tcp_addr/1</a></h4>
+<div class="spec">
+<p><code>tcp_addr(MAddr::string() | <a href="multiaddr.html#type-multiaddr">multiaddr:multiaddr()</a>) -&gt; {<a href="inet.html#type-ip_address">inet:ip_address()</a>, non_neg_integer(), inet | inet6, [any()]} | {error, term()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="terminate-2">terminate/2</a></h4>
+<div class="spec">
+<p><code>terminate(Reason, State) -&gt; any()</code></p>
+</div>
+
+<h4 class="function"><a name="to_multiaddr-1">to_multiaddr/1</a></h4>
+<div class="spec">
+<p><code>to_multiaddr(X1) -&gt; any()</code></p>
+</div>
+
+    </article>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300italic,600italic,700,600,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="screen.css" media="screen, projection" />
+    <title>Erlang Libp2p Library</title>
+  </head>
+  <body>
+    <header>
+        <h1>Erlang Libp2p</h1>
+        <nav>
+          <ul>
+<li><a href="index.html">index</a><li><a href="libp2p_ack_stream.html">libp2p_ack_stream</a><li><a href="libp2p_cache.html">libp2p_cache</a><li><a href="libp2p_config.html">libp2p_config</a><li><a href="libp2p_connection.html">libp2p_connection</a><li><a href="libp2p_crypto.html">libp2p_crypto</a><li><a href="libp2p_framed_stream.html">libp2p_framed_stream</a><li><a href="libp2p_gossip_stream.html">libp2p_gossip_stream</a><li><a href="libp2p_group_gossip.html">libp2p_group_gossip</a><li><a href="libp2p_group_gossip_handler.html">libp2p_group_gossip_handler</a><li><a href="libp2p_group_gossip_server.html">libp2p_group_gossip_server</a><li><a href="libp2p_group_gossip_sup.html">libp2p_group_gossip_sup</a><li><a href="libp2p_group_relcast.html">libp2p_group_relcast</a><li><a href="libp2p_group_relcast_server.html">libp2p_group_relcast_server</a><li><a href="libp2p_group_relcast_sup.html">libp2p_group_relcast_sup</a><li><a href="libp2p_group_server.html">libp2p_group_server</a><li><a href="libp2p_group_worker.html">libp2p_group_worker</a><li><a href="libp2p_group_worker_sup.html">libp2p_group_worker_sup</a><li><a href="libp2p_identify.html">libp2p_identify</a><li><a href="libp2p_info.html">libp2p_info</a><li><a href="libp2p_lager_metadata.html">libp2p_lager_metadata</a><li><a href="libp2p_multistream.html">libp2p_multistream</a><li><a href="libp2p_multistream_client.html">libp2p_multistream_client</a><li><a href="libp2p_multistream_server.html">libp2p_multistream_server</a><li><a href="libp2p_nat.html">libp2p_nat</a><li><a href="libp2p_nat_server.html">libp2p_nat_server</a><li><a href="libp2p_peer.html">libp2p_peer</a><li><a href="libp2p_peerbook.html">libp2p_peerbook</a><li><a href="libp2p_proxy.html">libp2p_proxy</a><li><a href="libp2p_proxy_dial_back.html">libp2p_proxy_dial_back</a><li><a href="libp2p_proxy_envelope.html">libp2p_proxy_envelope</a><li><a href="libp2p_proxy_error.html">libp2p_proxy_error</a><li><a href="libp2p_proxy_overload.html">libp2p_proxy_overload</a><li><a href="libp2p_proxy_req.html">libp2p_proxy_req</a><li><a href="libp2p_proxy_resp.html">libp2p_proxy_resp</a><li><a href="libp2p_proxy_server.html">libp2p_proxy_server</a><li><a href="libp2p_proxy_session.html">libp2p_proxy_session</a><li><a href="libp2p_relay.html">libp2p_relay</a><li><a href="libp2p_relay_bridge.html">libp2p_relay_bridge</a><li><a href="libp2p_relay_envelope.html">libp2p_relay_envelope</a><li><a href="libp2p_relay_ping.html">libp2p_relay_ping</a><li><a href="libp2p_relay_req.html">libp2p_relay_req</a><li><a href="libp2p_relay_resp.html">libp2p_relay_resp</a><li><a href="libp2p_relay_server.html">libp2p_relay_server</a><li><a href="libp2p_session.html">libp2p_session</a><li><a href="libp2p_simple_sup.html">libp2p_simple_sup</a><li><a href="libp2p_stream_identify.html">libp2p_stream_identify</a><li><a href="libp2p_stream_proxy.html">libp2p_stream_proxy</a><li><a href="libp2p_stream_relay.html">libp2p_stream_relay</a><li><a href="libp2p_stream_stungun.html">libp2p_stream_stungun</a><li><a href="libp2p_swarm.html">libp2p_swarm</a><li><a href="libp2p_swarm_auxiliary_sup.html">libp2p_swarm_auxiliary_sup</a><li><a href="libp2p_swarm_group_sup.html">libp2p_swarm_group_sup</a><li><a href="libp2p_swarm_listener_sup.html">libp2p_swarm_listener_sup</a><li><a href="libp2p_swarm_server.html">libp2p_swarm_server</a><li><a href="libp2p_swarm_session_sup.html">libp2p_swarm_session_sup</a><li><a href="libp2p_swarm_sup.html">libp2p_swarm_sup</a><li><a href="libp2p_swarm_transport_sup.html">libp2p_swarm_transport_sup</a><li><a href="libp2p_transport.html">libp2p_transport</a><li><a href="libp2p_transport_p2p.html">libp2p_transport_p2p</a><li><a href="libp2p_transport_proxy.html">libp2p_transport_proxy</a><li><a href="libp2p_transport_ranch_protocol.html">libp2p_transport_ranch_protocol</a><li><a href="libp2p_transport_relay.html">libp2p_transport_relay</a><li><a href="libp2p_transport_tcp.html">libp2p_transport_tcp</a><li><a href="libp2p_yamux_session.html">libp2p_yamux_session</a><li><a href="libp2p_yamux_stream.html">libp2p_yamux_stream</a>
+          </ul>
+        </nav>
+    </header>
+    <article>
+    <h2>Module libp2p_crypto</h2>
+<ul class="index"><li><a href="#types">Data Types</a></li><li><a href="#index">Function Index</a></li><li><a href="#functions">Function Details</a></li></ul>
+
+
+<h3><a name="types">Data Types</a></h3>
+
+<h4 class="typedecl"><a name="type-ecdh_fun">ecdh_fun()</a></h4>
+<p><code>ecdh_fun() = fun((<a href="#type-pubkey">pubkey()</a>) -&gt; binary())</code></p>
+
+
+<h4 class="typedecl"><a name="type-enacl_privkey">enacl_privkey()</a></h4>
+<p><code>enacl_privkey() = &lt;&lt;_:256&gt;&gt;</code></p>
+
+
+<h4 class="typedecl"><a name="type-enacl_pubkey">enacl_pubkey()</a></h4>
+<p><code>enacl_pubkey() = &lt;&lt;_:256&gt;&gt;</code></p>
+
+
+<h4 class="typedecl"><a name="type-key_map">key_map()</a></h4>
+<p><code>key_map() = #{secret =&gt; <a href="#type-privkey">privkey()</a>, public =&gt; <a href="#type-pubkey">pubkey()</a>}</code></p>
+
+
+<h4 class="typedecl"><a name="type-key_type">key_type()</a></h4>
+<p><code>key_type() = ecc_compact | ed25519</code></p>
+
+
+<h4 class="typedecl"><a name="type-privkey">privkey()</a></h4>
+<p><code>privkey() = {ecc_compact, <a href="ecc_compact.html#type-private_key">ecc_compact:private_key()</a>} | {ed25519, <a href="#type-enacl_privkey">enacl_privkey()</a>}</code></p>
+
+
+<h4 class="typedecl"><a name="type-pubkey">pubkey()</a></h4>
+<p><code>pubkey() = {ecc_compact, <a href="ecc_compact.html#type-public_key">ecc_compact:public_key()</a>} | {ed25519, <a href="#type-enacl_pubkey">enacl_pubkey()</a>}</code></p>
+
+
+<h4 class="typedecl"><a name="type-pubkey_bin">pubkey_bin()</a></h4>
+<p><code>pubkey_bin() = &lt;&lt;_:8, _:_*8&gt;&gt;</code></p>
+
+
+<h4 class="typedecl"><a name="type-sig_fun">sig_fun()</a></h4>
+<p><code>sig_fun() = fun((binary()) -&gt; binary())</code></p>
+
+
+<h3><a name="index">Function Index</a></h3>
+<table width="100%" border="1" cellspacing="0" cellpadding="2" summary="function index"><tr><td valign="top"><a href="#b58_to_bin-1">b58_to_bin/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#b58_to_pubkey-1">b58_to_pubkey/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#b58_to_version_bin-1">b58_to_version_bin/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#bin_to_b58-1">bin_to_b58/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#bin_to_b58-2">bin_to_b58/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#bin_to_pubkey-1">bin_to_pubkey/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#generate_keys-1">generate_keys/1</a></td><td>Generate keys suitable for a swarm.</td></tr>
+<tr><td valign="top"><a href="#keys_from_bin-1">keys_from_bin/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#keys_to_bin-1">keys_to_bin/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#load_keys-1">load_keys/1</a></td><td>Load the private key from a pem encoded given filename.</td></tr>
+<tr><td valign="top"><a href="#mk_ecdh_fun-1">mk_ecdh_fun/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#mk_sig_fun-1">mk_sig_fun/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#p2p_to_pubkey_bin-1">p2p_to_pubkey_bin/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#pubkey_bin_to_p2p-1">pubkey_bin_to_p2p/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#pubkey_to_b58-1">pubkey_to_b58/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#pubkey_to_bin-1">pubkey_to_bin/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#save_keys-2">save_keys/2</a></td><td>Store the given keys in a file.</td></tr>
+<tr><td valign="top"><a href="#verify-3">verify/3</a></td><td>Verifies a digital signature, using sha256.</td></tr>
+</table>
+
+<h3><a name="functions">Function Details</a></h3>
+
+<h4 class="function"><a name="b58_to_bin-1">b58_to_bin/1</a></h4>
+<div class="spec">
+<p><code>b58_to_bin(Str::string()) -&gt; binary()</code><br></p>
+</div>
+
+<h4 class="function"><a name="b58_to_pubkey-1">b58_to_pubkey/1</a></h4>
+<div class="spec">
+<p><code>b58_to_pubkey(Str::string()) -&gt; <a href="#type-pubkey">pubkey()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="b58_to_version_bin-1">b58_to_version_bin/1</a></h4>
+<div class="spec">
+<p><code>b58_to_version_bin(Str::string()) -&gt; {Version::non_neg_integer(), binary()}</code><br></p>
+</div>
+
+<h4 class="function"><a name="bin_to_b58-1">bin_to_b58/1</a></h4>
+<div class="spec">
+<p><code>bin_to_b58(Bin::binary()) -&gt; string()</code><br></p>
+</div>
+
+<h4 class="function"><a name="bin_to_b58-2">bin_to_b58/2</a></h4>
+<div class="spec">
+<p><code>bin_to_b58(Version::non_neg_integer(), Bin::binary()) -&gt; string()</code><br></p>
+</div>
+
+<h4 class="function"><a name="bin_to_pubkey-1">bin_to_pubkey/1</a></h4>
+<div class="spec">
+<p><code>bin_to_pubkey(X1::<a href="#type-pubkey_bin">pubkey_bin()</a>) -&gt; <a href="#type-pubkey">pubkey()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="generate_keys-1">generate_keys/1</a></h4>
+<div class="spec">
+<p><code>generate_keys(X1::<a href="#type-key_type">key_type()</a>) -&gt; <a href="#type-key_map">key_map()</a></code><br></p>
+</div><p>Generate keys suitable for a swarm.  The returned private and
+  public key has the attribute that the public key is a compressable
+  public key.</p>
+
+<h4 class="function"><a name="keys_from_bin-1">keys_from_bin/1</a></h4>
+<div class="spec">
+<p><code>keys_from_bin(X1::binary()) -&gt; <a href="#type-key_map">key_map()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="keys_to_bin-1">keys_to_bin/1</a></h4>
+<div class="spec">
+<p><code>keys_to_bin(X1::<a href="#type-key_map">key_map()</a>) -&gt; binary()</code><br></p>
+</div>
+
+<h4 class="function"><a name="load_keys-1">load_keys/1</a></h4>
+<div class="spec">
+<p><code>load_keys(FileName::string()) -&gt; {ok, <a href="#type-key_map">key_map()</a>} | {error, term()}</code><br></p>
+</div><p>Load the private key from a pem encoded given filename.
+  Returns the private and extracted public key stored in the file or
+  an error if any occorred.</p>
+
+<h4 class="function"><a name="mk_ecdh_fun-1">mk_ecdh_fun/1</a></h4>
+<div class="spec">
+<p><code>mk_ecdh_fun(X1::<a href="#type-privkey">privkey()</a>) -&gt; <a href="#type-ecdh_fun">ecdh_fun()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="mk_sig_fun-1">mk_sig_fun/1</a></h4>
+<div class="spec">
+<p><code>mk_sig_fun(X1::<a href="#type-privkey">privkey()</a>) -&gt; <a href="#type-sig_fun">sig_fun()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="p2p_to_pubkey_bin-1">p2p_to_pubkey_bin/1</a></h4>
+<div class="spec">
+<p><code>p2p_to_pubkey_bin(Str::string()) -&gt; <a href="#type-pubkey_bin">pubkey_bin()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="pubkey_bin_to_p2p-1">pubkey_bin_to_p2p/1</a></h4>
+<div class="spec">
+<p><code>pubkey_bin_to_p2p(PubKey::<a href="#type-pubkey_bin">pubkey_bin()</a>) -&gt; string()</code><br></p>
+</div>
+
+<h4 class="function"><a name="pubkey_to_b58-1">pubkey_to_b58/1</a></h4>
+<div class="spec">
+<p><code>pubkey_to_b58(PubKey::<a href="#type-pubkey">pubkey()</a>) -&gt; string()</code><br></p>
+</div>
+
+<h4 class="function"><a name="pubkey_to_bin-1">pubkey_to_bin/1</a></h4>
+<div class="spec">
+<p><code>pubkey_to_bin(X1::<a href="#type-pubkey">pubkey()</a>) -&gt; <a href="#type-pubkey_bin">pubkey_bin()</a></code><br></p>
+</div>
+
+<h4 class="function"><a name="save_keys-2">save_keys/2</a></h4>
+<div class="spec">
+<p><code>save_keys(KeysMap::<a href="#type-key_map">key_map()</a>, FileName::string()) -&gt; ok | {error, term()}</code><br></p>
+</div><p>Store the given keys in a file.  See @see key_folder/1 for a
+  utility function that returns a name and location for the keys that
+  are relative to the swarm data folder.</p>
+
+<h4 class="function"><a name="verify-3">verify/3</a></h4>
+<div class="spec">
+<p><code>verify(Bin::binary(), Signature::binary(), X3::<a href="#type-pubkey">pubkey()</a>) -&gt; boolean()</code><br></p>
+</div><p>Verifies a digital signature, using sha256.</p>
+
+    </article>
+  </body>
+</html>
